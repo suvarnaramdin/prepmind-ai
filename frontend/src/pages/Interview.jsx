@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 function Interview() {
   return (
     <div className="min-h-screen bg-gray-950 text-white p-10">
@@ -22,9 +23,11 @@ function Interview() {
           placeholder="Type your answer here..."
         ></textarea>
 
-        <button className="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-xl mt-6">
-          Submit Answer
-        </button>
+        <Link to="/interview">
+  <button className="bg-blue-600 hover:bg-blue-700 px-5 py-2 rounded-lg">
+    Start
+  </button>
+</Link>
 
       </div>
 

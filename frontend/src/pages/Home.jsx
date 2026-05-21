@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 function Home() {
   return (
     <div className="min-h-screen bg-gray-950 text-white">
@@ -15,10 +16,11 @@ function Home() {
           and instant feedback analysis.
         </p>
 
-        <button className="bg-blue-600 hover:bg-blue-700 px-7 py-3 rounded-xl text-lg transition mt-8">
-          Start Interview
-        </button>
-
+       <Link to="/dashboard">
+  <button className="bg-blue-600 hover:bg-blue-700 px-7 py-3 rounded-xl text-lg transition mt-8">
+    Start Interview
+  </button>
+</Link>
       </div>
 
     </div>
