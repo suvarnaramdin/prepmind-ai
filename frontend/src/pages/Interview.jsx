@@ -26,7 +26,7 @@ function Interview() {
     try {
 
       const response = await fetch(
-        "http://127.0.0.1:5000/questions"
+        "https://prepmind-backend-1pxz.onrender.com/evaluate"
       )
 
       const data = await response.json()
@@ -55,7 +55,7 @@ function Interview() {
     try {
 
       const response = await fetch(
-        "http://127.0.0.1:5000/upload-resume",
+        "https://prepmind-backend-1pxz.onrender.com/upload-resume",
         {
           method: "POST",
           body: formData
@@ -97,7 +97,7 @@ function Interview() {
     try {
 
       const response = await fetch(
-        "http://127.0.0.1:5000/evaluate",
+        "https://prepmind-backend-1pxz.onrender.com/evaluate",
         {
           method: "POST",
 
