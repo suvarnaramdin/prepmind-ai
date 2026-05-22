@@ -1,25 +1,7 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom"
-
-import Home from "./pages/Home"
-import Dashboard from "./pages/Dashboard"
-import Interview from "./pages/Interview"
+import Interview from "./pages/Interview";
 
 function App() {
-  return (
-    <BrowserRouter>
-
-      <Routes>
-
-        <Route path="/" element={<Home />} />
-
-        <Route path="/dashboard" element={<Dashboard />} />
-
-        <Route path="/interview" element={<Interview />} />
-
-      </Routes>
-
-    </BrowserRouter>
-  )
+  return <Interview />;
 }
 
-export default App
+export default App;
